@@ -53,7 +53,7 @@ What is ROS?
        sudo apt update
         ```
 - Now pick how much of ROS you would like to install: Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages.
-      ```
+       ```
         sudo apt install ros-noetic-desktop-full
     ```
 - There are even more packages available in ROS. You can always install a specific package directly.
