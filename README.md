@@ -49,11 +49,11 @@ What is ROS?
         curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
        ```
 - Make sure your package is up-to-date:
-        ```
+      ```
        sudo apt update
         ```
 - Now pick how much of ROS you would like to install: 
-      -Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages
+    -Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages
         ```
         sudo apt install ros-noetic-desktop-full
         ```
