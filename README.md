@@ -27,8 +27,8 @@ What is ROS?
 
 3. **Create the Virtual Machine**:
     - see the system requirements:
-     -For Ubuntu 20.04: https://help.ubuntu.com/community/Installation/SystemRequirements
-     -For Ubuntu 20.04 Mate: https://ubuntu-mate.org/about/requirements/
+    - For Ubuntu 20.04: https://help.ubuntu.com/community/Installation/SystemRequirements
+    - For Ubuntu 20.04 Mate: https://ubuntu-mate.org/about/requirements/
      *We choose Ubuntu 20.04
 
 4. **Setup Ubuntu 20.04 on Virtual Machine**:
@@ -44,8 +44,10 @@ What is ROS?
     - Set up your keys:
        ```
         sudo apt install curl # if you haven't already installed curl
-curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
-        ```
+       ```
+       ```
+        curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+       ```
 - Make sure your package is up-to-date:
         ```
        sudo apt update
