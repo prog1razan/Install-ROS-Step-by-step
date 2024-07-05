@@ -42,10 +42,9 @@ What is ROS?
         sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
         ```
     - Set up your keys:
-       ```sh
+       ```
         sudo apt install curl # if you haven't already installed curl
-curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc |
- sudo apt-key add -
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
         ```
 - Make sure your package is up-to-date:
         ```
@@ -75,8 +74,8 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc |
 - To test if ROS has been installed successfully or not:
      ```
         roscore
-      ```
-    if you see meassage contain "summary" that means you intall ROS successfully and it is running now.
+    ```
+if you see meassage contain "summary" that means you intall ROS successfully and it is running now.
 
 
 
