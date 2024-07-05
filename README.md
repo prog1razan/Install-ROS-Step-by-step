@@ -53,8 +53,8 @@ What is ROS?
        sudo apt update
         ```
 - Now pick how much of ROS you would like to install: 
-    -Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages
-        ```
+-Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages
+        ```sh
         sudo apt install ros-noetic-desktop-full
         ```
 - There are even more packages available in ROS. You can always install a specific package directly.
@@ -72,7 +72,7 @@ What is ROS?
 - You must source this script in every bash terminal you use ROS in:
      ```
         source /opt/ros/noetic/setup.bash
-      ```
+      
 - To test if ROS has been installed successfully or not:
      ```
         roscore
