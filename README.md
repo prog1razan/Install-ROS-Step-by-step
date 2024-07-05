@@ -17,7 +17,7 @@ What is ROS?
 - **Ubuntu 20.04**:
 
 ## Installation 🗺️
-
+-Install ROS noetic:
 1. **Download VM**:
     https://www.virtualbox.org/wiki/Downloads
 
