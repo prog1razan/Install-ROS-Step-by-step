@@ -36,7 +36,7 @@ What is ROS?
 ## File Structure 🏗️
 
 ```
-robot-control-panel/
+Install-ROS-Step-by-step/
 │
 ├── README.md
 ```
