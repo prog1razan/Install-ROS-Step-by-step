@@ -27,9 +27,9 @@ What is ROS?
 
 3. **Create the Virtual Machine**:
     - see the system requirements:
-     For Ubuntu 20.04: https://help.ubuntu.com/community/Installation/SystemRequirements
-     For Ubuntu 20.04 Mate: https://ubuntu-mate.org/about/requirements/
-     We choose Ubuntu 20.04
+     -For Ubuntu 20.04: https://help.ubuntu.com/community/Installation/SystemRequirements
+     -For Ubuntu 20.04 Mate: https://ubuntu-mate.org/about/requirements/
+     *We choose Ubuntu 20.04
 
 4. **Setup Ubuntu 20.04 on Virtual Machine**:
      Open VM then enter New and write any name then through ISO image select other and open Ubuntu file.
@@ -41,6 +41,44 @@ What is ROS?
         ```sh
         sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
         ```
+    - Set up your keys:
+       ```sh
+        sudo apt install curl # if you haven't already installed curl
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+        ```
+    - Make sure your package is up-to-date:
+        ```sh
+       sudo apt update
+        ```
+    - Now pick how much of ROS you would like to install: 
+      -Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages
+        ```sh
+        sudo apt install ros-noetic-desktop-full
+        ```
+      -There are even more packages available in ROS. You can always install a specific package directly.
+        ```sh
+        sudo apt install ros-noetic-PACKAGE
+        ```
+        e.g.
+        ```sh
+        sudo apt install ros-noetic-slam-gmapping
+        ```
+      -To find available packages, see https://index.ros.org/packages/page/1/time/#noetic or use:
+       ```sh
+        apt search ros-noetic
+        ```
+    - You must source this script in every bash terminal you use ROS in:
+     ```sh
+        source /opt/ros/noetic/setup.bash
+      ```
+    - To test if ROS has been installed successfully or not:
+     ```sh
+        roscore
+      ```
+      if you see meassage contain "summary" that means you intall ROS successfully and it is running now.
+
+
+
 
 ## File Structure 🏗️
 
