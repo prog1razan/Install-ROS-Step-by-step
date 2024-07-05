@@ -19,9 +19,7 @@ What is ROS?
 ## Installation 🗺️
 
 1. **Download VM**:
-    ```
     https://www.virtualbox.org/wiki/Downloads
-    ```
 
 2. **Download Ubuntu 20.04 or Ubuntu mate 20.04**:
     - To download Ubuntu 20.04: https://releases.ubuntu.com/20.04/
