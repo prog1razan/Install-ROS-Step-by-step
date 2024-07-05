@@ -44,18 +44,19 @@ What is ROS?
     - Set up your keys:
        ```sh
         sudo apt install curl # if you haven't already installed curl
-curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc |
+ sudo apt-key add -
         ```
-    - Make sure your package is up-to-date:
+- Make sure your package is up-to-date:
         ```sh
        sudo apt update
         ```
-    - Now pick how much of ROS you would like to install: 
+- Now pick how much of ROS you would like to install: 
       -Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages
         ```sh
         sudo apt install ros-noetic-desktop-full
         ```
-      -There are even more packages available in ROS. You can always install a specific package directly.
+- There are even more packages available in ROS. You can always install a specific package directly.
         ```sh
         sudo apt install ros-noetic-PACKAGE
         ```
@@ -63,15 +64,15 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
         ```sh
         sudo apt install ros-noetic-slam-gmapping
         ```
-      -To find available packages, see https://index.ros.org/packages/page/1/time/#noetic or use:
+- To find available packages, see https://index.ros.org/packages/page/1/time/#noetic or use:
        ```sh
         apt search ros-noetic
         ```
-    - You must source this script in every bash terminal you use ROS in:
+- You must source this script in every bash terminal you use ROS in:
      ```sh
         source /opt/ros/noetic/setup.bash
       ```
-    - To test if ROS has been installed successfully or not:
+- To test if ROS has been installed successfully or not:
      ```sh
         roscore
       ```
