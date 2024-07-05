@@ -48,7 +48,7 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc |
  sudo apt-key add -
         ```
 - Make sure your package is up-to-date:
-        ```sh
+        ```
        sudo apt update
         ```
 - Now pick how much of ROS you would like to install: 
@@ -57,26 +57,26 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc |
         sudo apt install ros-noetic-desktop-full
         ```
 - There are even more packages available in ROS. You can always install a specific package directly.
-        ```sh
+        ```
         sudo apt install ros-noetic-PACKAGE
         ```
         e.g.
-        ```sh
+        ```
         sudo apt install ros-noetic-slam-gmapping
         ```
 - To find available packages, see https://index.ros.org/packages/page/1/time/#noetic or use:
-       ```sh
+       ```
         apt search ros-noetic
         ```
 - You must source this script in every bash terminal you use ROS in:
-     ```sh
+     ```
         source /opt/ros/noetic/setup.bash
       ```
 - To test if ROS has been installed successfully or not:
-     ```sh
+     ```
         roscore
       ```
-      if you see meassage contain "summary" that means you intall ROS successfully and it is running now.
+    if you see meassage contain "summary" that means you intall ROS successfully and it is running now.
 
 
 
