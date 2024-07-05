@@ -77,6 +77,8 @@ What is ROS?
         roscore
     ```
 if you see meassage contain "SUMMARY" that means you intall ROS successfully and it is running now.
+------------------------------------------------------------
+-Install ROS2 foxy:
 
 
 
