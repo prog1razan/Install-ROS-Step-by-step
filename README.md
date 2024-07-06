@@ -82,13 +82,18 @@ What is ROS?
     - Open Terminal of Ubuntu to write commands to install ROS2 foxy.
     - Set locale:
      ```locale  # check for UTF-8
-
-sudo apt update && sudo apt install locales
-sudo locale-gen en_US en_US.UTF-8
-sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
-export LANG=en_US.UTF-8
-
-locale  # verify settings```
+       sudo apt update && sudo apt install locales
+       sudo locale-gen en_US en_US.UTF-8
+       sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+       export LANG=en_US.UTF-8
+       locale  # verify settings
+        ```
+- Setup sources: You will need to add the ROS 2 apt repository to your system
+    ```sudo apt install software-properties-common
+    sudo add-apt-repository universe
+    ```
+    
+    
 
 
 ## File Structure 🏗️
