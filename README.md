@@ -81,19 +81,55 @@ What is ROS?
     - Go to https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html .
     - Open Terminal of Ubuntu to write commands to install ROS2 foxy.
     - Set locale:
-     ```locale  # check for UTF-8
+     ```
+     locale  # check for UTF-8
        sudo apt update && sudo apt install locales
        sudo locale-gen en_US en_US.UTF-8
        sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
        export LANG=en_US.UTF-8
        locale  # verify settings
-        ```
+     ```
 - Setup sources: You will need to add the ROS 2 apt repository to your system
-    ```sudo apt install software-properties-common
+    ```
+    sudo apt install software-properties-common
     sudo add-apt-repository universe
     ```
-    
-    
+- Now add the ROS 2 GPG key with apt:
+```
+sudo apt update && sudo apt install curl -y
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+```
+- Then add the repository to your sources list:
+```
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+```
+- Update your apt repository caches after setting up the repositories:
+```
+sudo apt update
+```
+- ROS 2 packages are built on frequently updated Ubuntu systems. It is always recommended that you ensure your system is up to date before installing new packages.
+```
+sudo apt upgrade
+```
+- Desktop Install (Recommended): ROS, RViz, demos, tutorials:
+```
+sudo apt install ros-foxy-desktop python3-argcomplete
+```
+- Development tools: Compilers and other tools to build ROS packages:
+```
+sudo apt install ros-dev-tools
+```
+- Set up your environment by sourcing the following file through nano editor:
+```
+nano .bashrc
+```
+
+```
+source /opt/ros/foxy/setup.bash
+```
+then exit from nano editor by press ctrl x.
+
+
 
 
 ## File Structure 🏗️
