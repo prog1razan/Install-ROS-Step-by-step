@@ -129,7 +129,17 @@ source /opt/ros/foxy/setup.bash
 ```
 then exit from nano editor by press ctrl x.
 
+- Try some example: If you installed ros-foxy-desktop above you can try some examples.
 
+In one terminal, source the setup file and then run a C++ talker:
+```
+ros2 run demo_nodes_cpp talker
+```
+In another terminal source the setup file and then run a Python listener:
+```
+ros2 run demo_nodes_py listener
+```
+You should see the talker saying that it’s Publishing messages and the listener saying I heard those messages. This verifies both the C++ and Python APIs are working properly.
 
 
 ## File Structure 🏗️
