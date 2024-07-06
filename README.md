@@ -17,7 +17,7 @@ What is ROS?
 - **Ubuntu 20.04**:
 
 ## Installation 🗺️
--Install ROS noetic:
+
 1. **Download VM**:
     https://www.virtualbox.org/wiki/Downloads
 
@@ -34,7 +34,7 @@ What is ROS?
 4. **Setup Ubuntu 20.04 on Virtual Machine**:
      Open VM then enter New and write any name then through ISO image select other and open Ubuntu file.
 
-5. **Setup ROS on Ubuntu 20.04**:
+5. **Setup ROS noetic on Ubuntu 20.04**:
     - Go to https://wiki.ros.org/noetic/Installation and select your platform, we choose Ubuntu.
     - Open Terminal of Ubuntu to write commands to install ROS.
     - Setup your sources.list: Setup your computer to accept software from packages.ros.org.
@@ -77,10 +77,18 @@ What is ROS?
         roscore
     ```
     - if you see meassage contain "SUMMARY" that means you intall ROS noetic successfully and it is running now.
-------------------------------------------------------------
--Install ROS2 foxy:
+6. **Setup ROS2 foxy on Ubuntu 20.04**:
+    - Go to https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html .
+    - Open Terminal of Ubuntu to write commands to install ROS2 foxy.
+    - Set locale:
+     ```locale  # check for UTF-8
 
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
+locale  # verify settings```
 
 
 ## File Structure 🏗️
