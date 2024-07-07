@@ -9,7 +9,7 @@ What is ROS?
 - [File Structure](#file-structure)
 
 ## Project Description📝
-
+The "Install-ROS-Step-by-step" project provides a comprehensive guide for setting up the Robot Operating System (ROS) on a virtual machine using Oracle VM VirtualBox and Ubuntu 20.04. This guide covers the installation of both ROS Noetic and ROS2 Foxy, ensuring that users can choose and install the version that best fits their needs. The step-by-step instructions are designed to help beginners and experienced developers alike in setting up a robust environment for developing robotics applications.
 
 ## Technologies Used 🔧
 
