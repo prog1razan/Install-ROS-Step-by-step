@@ -14,8 +14,8 @@ The "Install-ROS-Step-by-step" project provides a comprehensive guide for settin
 
 ## Technologies Used 🔧
 
-- **Oracle VM Virtual Box**:
-- **Ubuntu 20.04**:
+- **Oracle VM Virtual Box**
+- **Ubuntu 20.04**
 
 ## Installation 🗺️
 
